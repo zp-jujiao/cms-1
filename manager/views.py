@@ -44,7 +44,6 @@ def loginHandler(request):
         return HttpResponse(returnResult(1, "密码输入错误，请重新输入"))
     return HttpResponse(returnResult(1, "用户名输入错误，请再次确认"))
 
-
 def returnResult(code,mgs,data=""):
     '''
     :param code: 0代表success ！=0 代表error
